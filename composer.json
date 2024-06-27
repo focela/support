@@ -1,0 +1,57 @@
+{
+  "name": "focela/support",
+  "description": "Flexible helper methods & traits for commonly used functionalities",
+  "keywords": [
+    "focela",
+    "helper",
+    "laravel",
+    "support"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Focela Technologies",
+      "email": "opensource@focela.com",
+      "homepage": "https://opensource.focela.com"
+    }
+  ],
+  "require": {
+    "php": "^8.1"
+  },
+  "require-dev": {
+    "focela/php-cs-fixer": "^3.0",
+    "illuminate/config": "^10.0",
+    "illuminate/mail": "^10.0",
+    "illuminate/validation": "^10.0",
+    "mockery/mockery": "^1.0",
+    "phpunit/phpunit": "^9.0",
+    "symfony/translation": "^6.2"
+  },
+  "scripts": {
+    "cs:check": "@php php-cs-fixer check --verbose --diff",
+    "cs:fix": "@php php-cs-fixer fix",
+    "test": "./vendor/bin/phpunit"
+  },
+  "autoload": {
+    "psr-4": {
+      "Focela\\Support\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Focela\\Support\\Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "10.0.x-dev"
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
