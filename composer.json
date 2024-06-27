@@ -24,7 +24,7 @@
   "require-dev": {
     "focela/php-cs-fixer": "^3.0",
     "mockery/mockery": "^1.0",
-    "phpunit/phpunit": "^10.0",
+    "phpunit/phpunit": "^11.2",
     "symfony/translation": "^7.0"
   },
   "scripts": {
